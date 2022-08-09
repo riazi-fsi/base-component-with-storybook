@@ -7,8 +7,16 @@ import pkg from './package.json';
 export default {
   input:'src/index.js',
   output: [
-    { file: pkg.main, format: 'cjs' },
-    { file: pkg.module, format: 'esm' }
+    {
+        file: packageJson.main,
+        format: "cjs",
+        sourcemap: true,
+    },
+    {
+        file: packageJson.module,
+        format: "esm",
+        sourcemap: true,
+    },
   ],
   plugins: [
     babel({
