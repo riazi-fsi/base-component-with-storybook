@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "rollup -c"
+    "rollup": "rollup -c"
   },
   "author": "fariba riazi",
   "license": "ISC",
@@ -37,5 +37,7 @@
     "rollup": "^2.77.2",
     "rollup-plugin-terser": "^7.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "prop-types": "^15.8.1"
+  }
 }
