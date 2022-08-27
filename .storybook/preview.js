@@ -8,3 +8,6 @@ export const parameters = {
     },
   },
 }
+export default {
+  parameters: { actions: { argTypesRegex: '^on.*' } },
+};
